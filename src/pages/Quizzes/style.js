@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         fontSize:16,
         paddingLeft:16,
         paddingRight:16,
-        paddingTop:51
+        paddingTop:35
     },
     Nome: {
         width:'100%',
@@ -16,6 +16,10 @@ const styles = StyleSheet.create({
         fontSize:32,
         fontWeight:'bold',
         color:'#333333'
+    },
+    BigBlueButtonView: {
+        marginTop:12,
+        flexDirection:'row'
     },
     BigBlueButton: {
         width:70,

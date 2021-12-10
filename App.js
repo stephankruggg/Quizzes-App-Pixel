@@ -20,19 +20,24 @@ const xmlConfigs = `<svg width="25" height="24" viewBox="0 0 25 24" fill="none" 
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+    sc
+    >
       <Tab.Navigator>
         <Tab.Screen name="Quizzes" component={Quizzes}
         options={{
-          tabBarIcon: ({}) => (<SvgXml xml={xmlQuizzes} width='20' height='20'/>)
+          tabBarIcon: ({}) => (<SvgXml xml={xmlQuizzes} width='20' height='20'/>),
+          headerShown:false
         }}/>
         <Tab.Screen name="Perfil" component={Perfil}
         options={{
-          tabBarIcon: ({}) => (<SvgXml xml={xmlProfile} width='20' height='20'/>)
+          tabBarIcon: ({}) => (<SvgXml xml={xmlProfile} width='20' height='20'/>),
+          headerShown:false
         }}/>
         <Tab.Screen name="Configs" component={Configs}
         options={{
-          tabBarIcon: ({}) => (<SvgXml xml={xmlConfigs} width='20' height='20'/>)
+          tabBarIcon: ({}) => (<SvgXml xml={xmlConfigs} width='20' height='20'/>),
+          headerShown:false
         }}/>
       </Tab.Navigator>
      </NavigationContainer>
