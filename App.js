@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { AntDesign, Ionicons } from '@expo/vector-icons'; 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -13,9 +13,18 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Quizzes" component={Quizzes}/>
-        <Tab.Screen name="Perfil" component={Perfil}/>
-        <Tab.Screen name="Configs" component={Configs}/>
+        <Tab.Screen name="Quizzes" component={Quizzes}
+        options={{
+          tabBarIcon: ({}) => (<AntDesign name="book" size={20} color="black"/>)
+        }}/>
+        <Tab.Screen name="Perfil" component={Perfil}
+        options={{
+          tabBarIcon: ({}) => (<Ionicons name="person" size={20} color="black"/>)
+        }}/>
+        <Tab.Screen name="Configs" component={Configs}
+        options={{
+          tabBarIcon: ({}) => (<Ionicons name="settings-outline" size={20} color="black"/>)
+        }}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

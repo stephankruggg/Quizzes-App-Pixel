@@ -8,7 +8,7 @@ export default function Quizzes() {
     <View>
       <Text style={styles.Hello}>Hello,</Text>
       <Text style={styles.Nome}>Juana Antonieta</Text>
-      <TextInput></TextInput>
+      <TextInput>Pesquisar</TextInput>
       <TouchableOpacity style={styles.BigBlueButton}>
         <Text style={styles.TextBigBlueButton}>#HTML</Text>
       </TouchableOpacity>
