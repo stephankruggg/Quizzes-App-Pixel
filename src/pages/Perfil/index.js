@@ -1,10 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
+import styles from './style';
 
-export default function Quizzes() {
+export default function Profile() {
   return (
     <View>
-      <Text>Perfil</Text>
+      <Text style={styles.Title}>Profile</Text>
+      <Image
+      style={styles.Avatar}
+      source={{uri:"./assets/Avatar.png"}}
+      ></Image>
+      <TouchableOpacity style={styles.HistButton}>Seu histórico</TouchableOpacity>
+      <TouchableOpacity style={styles.AboutButton}>Sobre o app</TouchableOpacity>
     </View>
   );
 }
