@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 
 import styles from './style'
-export default function Quizzes() {
+export default function Quizzes( { navigation } ) {
   return (
     <View>
         <Text style={styles.Title}>HTML</Text>
@@ -17,8 +17,7 @@ export default function Quizzes() {
         <Text style={styles.Texto}>You can launch a new career in web development today by learning HTML and CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.</Text>
         <Text style={styles.Perguntas}>Quantidade de Perguntas</Text>
         <Text style={styles.Respostas}>10</Text>
-        <TouchableOpacity style={styles.Botao}>Fazer tentativa</TouchableOpacity>
-    </View>
-      
+        <TouchableOpacity style={styles.Botao} onPress={() => navigation.navigate('Content')}>Fazer tentativa</TouchableOpacity>
+    </View>    
   );
 }
