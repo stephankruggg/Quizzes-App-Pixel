@@ -8,7 +8,7 @@ export default function Quizzes() {
       <StatusBar barStyle='dark-content'/>
       <Text style={styles.Hello}>Hello,</Text>
       <Text style={styles.Nome}>Juana Antonieta</Text>
-      <TextInput placeholder='Pesquisar'></TextInput>
+      <TextInput style={styles.Search} placeholder='Pesquisar quiz'></TextInput>
       <View style={styles.BigBlueButtonView}>
           <TouchableOpacity style={styles.BigBlueButton}>
             <Text style={styles.TextBigBlueButton}>#HTML</Text>

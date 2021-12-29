@@ -21,6 +21,21 @@ const styles = StyleSheet.create({
         marginTop:12,
         flexDirection:'row'
     },
+    Search: {
+        marginTop: 12,
+        marginRight: 16,
+        marginLeft: 16,
+        width: 343,
+        height: 56, 
+        paddingLeft: 16,
+        paddingRight: 56,
+        paddingTop: 17,
+        paddingBottom: 17,
+        borderWidth: 1,
+        borderRadius: 12,
+        alignContent: 'center',
+        alignItems: 'center'
+    },
     BigBlueButton: {
         width:70,
         borderRadius:12,
