@@ -1,5 +1,5 @@
 import React from 'react';
-import { SvgXml } from 'react-native-svg';
+import { Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -21,7 +21,10 @@ export default function App() {
         }}/>
         <Tab.Screen name="Perfil" component={Perfil}
         options={{
-          headerShown:false
+          tabBarIcon: ({tintColor}) => (<Image 
+            source={require('./src/assets/courses.png')}
+            style={{width:'20', height:'20', tintColor: tintColor}} 
+            />)
         }}/>
         <Tab.Screen name="Configs" component={Configs}
         options={{
