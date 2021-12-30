@@ -1,18 +1,22 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, Text, View, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, Image } from 'react-native';
 
+import { AntDesign } from '@expo/vector-icons'; 
 import styles from './style';
 
-export default function HTMLContent() {
+export default function HTMLContent({navigation}) {
   const first = '<h5>'
   const second = '<p>'
   const third = '<h1>'
 
-  const picture = require('./images/Test Question Image.png')
+  const picture = require('./assets/Test Question Image.png')
 
   return (
     <SafeAreaView>
       <ScrollView>
+        <TouchableOpacity onPress={() => navigation.navigate('HTMLQuiz')} style={styles.Back}>
+          <AntDesign name="left" size={15} color="black" />
+        </TouchableOpacity>
         <Text style={styles.NumeroPergunta}>1 de 1</Text>
         <Text style={styles.Pergunta}>Qual tag é usada para fazer títulos grandes?</Text>
         <Image

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image, ScrollView, SafeAreaView } from 'react-native';
+import { AntDesign } from '@expo/vector-icons'; 
 
 import styles from './style'
 
@@ -7,7 +8,12 @@ export default function HTMLQuiz({navigation}) {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text style={styles.Title}>HTML</Text>
+        <View style={styles.Visualization}>
+          <TouchableOpacity onPress={() => navigation.navigate('Quizzes')} style={styles.Back}>
+            <AntDesign name="left" size={15} color="black" />
+          </TouchableOpacity>
+          <Text style={styles.Title}>HTML</Text>
+        </View>
         <Image
         style={styles.Cover}
         source={{

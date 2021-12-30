@@ -1,9 +1,21 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+    Back: {
+        borderRadius: 50,
+        height: 40,
+        width: 40,
+        marginLeft: 16,
+        marginTop: 20,
+        borderColor: '#BEBAB3',
+        borderWidth: 1,
+        alignContent: 'center',
+        alignItems: 'center',
+        paddingTop: 11
+    },
     NumeroPergunta: {
         width: 50,
-        marginLeft: 168,
+        marginLeft: 163,
         marginTop: 83,
         fontSize: 16,
         textAlign: 'center',
