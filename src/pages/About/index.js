@@ -1,17 +1,23 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, Text, TouchableOpacity, View, Image } from 'react-native';
 import styles from './style';
+import { AntDesign } from '@expo/vector-icons';
 
-export default function About() {
+export default function About({navigation}) {
   return (
-    <View>
-      <Text style={styles.Title}>Sobre o app</Text>
+    <SafeAreaView>
+      <View style={styles.Visualization}>
+        <TouchableOpacity onPress={() => navigation.navigate('Home', {screen: 'Perfil'})} style={styles.Back}>
+          <AntDesign name="left" size={15} color="black" />
+        </TouchableOpacity>
+        <Text style={styles.Title}>Sobre o app</Text>
+      </View>
       <Image
       style={styles.Logo}
       source={{uri:"./assets/illustration.png"}}
       ></Image>
       <Text style={styles.Name}>PixelQuizzes</Text>
       <Text style={styles.Content}>O PixelQuizzes é um aplicativo criado para facilitar o aprendizado de conteúdos que nem sempre são os melhores de se aprender. Através da nossa plataforma, prometemos facilitar a sua aprendizagem em conceitos dos mais variados tipos. Isso se dá pelo fato de usarmos uma metodologia inovadora para aprendizagem!</Text>
-    </View>
+    </SafeAreaView>
   );
 }

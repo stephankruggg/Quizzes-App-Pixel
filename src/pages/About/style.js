@@ -1,19 +1,34 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+    Visualization: {
+        flexDirection: 'row'
+    },
+    Back: {
+        borderRadius: 50,
+        height: 40,
+        width: 40,
+        marginLeft: 16,
+        marginTop: 20,
+        borderColor: '#BEBAB3',
+        borderWidth: 1,
+        alignContent: 'center',
+        alignItems: 'center',
+        paddingTop: 11
+    },
     Title: {
-        width: '100%',
+        width: 260,
+        marginTop: 24,
+        textAlign: 'center',
         height: 32,
         flex:'center',
-        fontFamily: 'rubik',
         fontSize: 24,
-        fontWeight: 500,
+        fontWeight: 'bold',
         alignContent: 'center'
     },
     Logo: {
-        flex: 1,
         width: 311,
-        height: 311,
+        height: 100,
         marginTop: 158,
         marginLeft: 127,
         alignContent: 'center'
@@ -21,7 +36,6 @@ const styles = StyleSheet.create({
     Name: {
         width: '100%',
         height: 46,
-        fontFamily: 'rubik',
         flex:'center',
         fontSize: 40,
         fontWeight: 'bold',
@@ -31,11 +45,10 @@ const styles = StyleSheet.create({
         marginTop: 16
     },
     Content: {
-        flex: 1,
         height: 147,
+        width: 341,
         marginTop: 40,
         fontSize: 14,
-        fontFamily: 'rubik',
         textAlign: 'center',
         color: '#78746D',
         marginLeft: 16,

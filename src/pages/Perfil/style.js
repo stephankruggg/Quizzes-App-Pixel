@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
     Title: {
         width: '100%',
         height: 32,
-        flex:'center',
         fontSize: 24,
         alignContent: 'center'
     },
@@ -13,7 +12,6 @@ const styles = StyleSheet.create({
         alignContent: 'center'
     },
     HistButton: {
-        flex: 1,
         width: 343,
         height: 80,
         alignItems: 'center',
@@ -24,7 +22,6 @@ const styles = StyleSheet.create({
         marginTop: 32
     },
     AboutButton: {
-        flex: 1,
         width: 343,
         height: 80,
         alignItems: 'center',

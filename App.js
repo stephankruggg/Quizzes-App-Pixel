@@ -8,6 +8,7 @@ import Quizzes from './src/pages/Quizzes';
 import HTMLQuiz from './src/pages/HTMLQuiz';
 import HTMLContent from './src/pages/HTMLContent'
 import Perfil from './src/pages/Perfil';
+import About from './src/pages/About'
 import Configs from './src/pages/Configs';
 
 const Tab = createBottomTabNavigator();
@@ -43,6 +44,7 @@ export default function App() {
         <Stack.Screen name="Home" component={Tabs} options={{headerShown: false}}/>
         <Stack.Screen name="HTMLQuiz" component={HTMLQuiz} options={{headerShown: false}} />
         <Stack.Screen name="HTMLContent" component={HTMLContent} options={{headerShown: false}}/>
+        <Stack.Screen name="About" component={About} options={{headerShown: false}} />
       </Stack.Navigator>
      </NavigationContainer>
   );
