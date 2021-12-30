@@ -1,41 +1,57 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+    Visualization: {
+        flexDirection: 'row'
+    },
+    Back: {
+        borderRadius: 50,
+        height: 40,
+        width: 40,
+        marginLeft: 16,
+        marginTop: 20,
+        borderColor: '#BEBAB3',
+        borderWidth: 1,
+        alignContent: 'center',
+        alignItems: 'center',
+        paddingTop: 11
+    },
     Title: {
-        marginTop: 48,
-        flex: 1,
-        fontFamily: 'rubik',
-        fontWeight: 500,
+        marginTop: 24,
+        width: 270,
+        textAlign: 'center',
+        fontWeight: 'bold',
         style: 'normal',
         fontSize: 24,
         alignContent: 'center'
     },
     Result: {
-        marginTop: 236,
-        flex: 1,
-        fontFamily: 'rubik',
-        fontWeight: 700,
+        marginTop: "50%",
+        fontWeight: 'bold',
+        textAlign: 'center',
         fontSize: 56,
         alignContent: 'center'
     },
     SecondTitle: {
         marginTop: 40,
-        flex: 1,
-        fontFamily: 'rubik',
-        fontWeight: 500,
+        fontWeight: 'bold',
+        textAlign: 'center',
         fontSize: 24,
         alignContent: 'center'
     },
     Texticle: {
         marginTop: 8,
-        flex: 1,
-        fontFamily: 'rubik',
-        fontWeight: 400,
+        marginLeft: 16,
+        marginRight: 18,
+        fontWeight: 'bold',
+        textAlign: 'center',
         fontSize: 14,
-        alignContent: 'center'
+        alignContent: 'center',
+        color: '#78746D'
     },
     Finish: {
-        marginTop: 218,
+        marginBottom: 40,
+        marginTop: '35%',
         textAlign: 'center',
         backgroundColor: '#82327E',
         borderRadius: 16,
@@ -46,6 +62,15 @@ const styles = StyleSheet.create({
         marginRight: 32,
         width: 309,
         height: 56
+    },
+    TextFinish: {
+        marginTop: 16,
+        marginLeft: 32,
+        textAlign: 'center',
+        width: 175,
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 16
     }
 });
 

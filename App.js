@@ -7,6 +7,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Quizzes from './src/pages/Quizzes';
 import HTMLQuiz from './src/pages/HTMLQuiz';
 import HTMLContent from './src/pages/HTMLContent'
+import Acerto from './src/pages/Acerto'
+import Erro from './src/pages/Erro'
 import Perfil from './src/pages/Perfil';
 import About from './src/pages/About'
 import Configs from './src/pages/Configs';
@@ -45,6 +47,8 @@ export default function App() {
         <Stack.Screen name="HTMLQuiz" component={HTMLQuiz} options={{headerShown: false}} />
         <Stack.Screen name="HTMLContent" component={HTMLContent} options={{headerShown: false}}/>
         <Stack.Screen name="About" component={About} options={{headerShown: false}} />
+        <Stack.Screen name="Acerto" component={Acerto} options={{headerShown: false}} />
+        <Stack.Screen name="Erro" component={Erro} options={{headerShown: false}} />
       </Stack.Navigator>
      </NavigationContainer>
   );
