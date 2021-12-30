@@ -2,12 +2,13 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     Title: {
-        width: '100%',
+        width: 341,
         height: 32,
-        flex:'center',
+        marginLeft: 17,
+        marginTop: 23,
+        fontWeight: 'bold',
         fontSize: 24,
-        fontWeight: 500,
-        alignContent: 'center'
+        textAlign: 'center'
     },
     Cover: {
         width:"100%",
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
         marginTop: 32,
         alignContent: 'flex-end',
         marginRight: 12,
+        marginLeft: 291,
         borderRadius: 12,
         backgroundColor: '#65AAEA',
         justifyContent: 'center',
@@ -27,12 +29,17 @@ const styles = StyleSheet.create({
         width: 72,
         height: 24
     },
+    DificuldadeTexto: {
+        color: 'white',
+        fontWeight: 'bold'
+    },
     Sobre: {
         width:'100%',
         height: 32,
+        marginTop: 24,
         marginLeft: 16,
         marginRight: 12,
-        fontWeight: 500,
+        fontWeight: 'bold',
         fontSize: 24
     },
     Texto: {
@@ -43,10 +50,10 @@ const styles = StyleSheet.create({
     },
     Perguntas: {
         marginTop: 24,
+        fontWeight: 'bold',
         marginLeft: 16,
         marginRight: 12, 
-        fontSize: 20,
-        fontWeight: 500,
+        fontSize: 20
     },
     Respostas: {
         marginTop: 4,
@@ -55,13 +62,20 @@ const styles = StyleSheet.create({
         fontSize: 14
     },
     Botao: {
-        marginTop:53,
+        marginTop: 53,
+        marginLeft: 33,
+        marginBottom: 42,
         justifyContent: 'center',
         alignContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#82327E',
         borderRadius: 16,
         height: 56,
         width: 309
+    },
+    FraseBotao: {
+        color: 'white',
+        fontWeight: 'bold',
     }
 });
 

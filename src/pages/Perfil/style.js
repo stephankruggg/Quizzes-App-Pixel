@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
         height: 32,
         flex:'center',
         fontSize: 24,
-        fontWeight: 500,
         alignContent: 'center'
     },
     Avatar: {

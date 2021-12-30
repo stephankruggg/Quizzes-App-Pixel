@@ -6,12 +6,8 @@ export default function Profile() {
   return (
     <View>
       <Text style={styles.Title}>Profile</Text>
-      <Image
-      style={styles.Avatar}
-      source={{uri:"./assets/Avatar.png"}}
-      ></Image>
-      <TouchableOpacity style={styles.HistButton}>Seu histórico</TouchableOpacity>
-      <TouchableOpacity style={styles.AboutButton}>Sobre o app</TouchableOpacity>
+      <TouchableOpacity style={styles.HistButton}><Text>Seu histórico</Text></TouchableOpacity>
+      <TouchableOpacity style={styles.AboutButton}><Text>Sobre o app</Text></TouchableOpacity>
     </View>
   );
 }

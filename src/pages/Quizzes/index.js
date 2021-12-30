@@ -2,7 +2,8 @@ import React from 'react';
 import { Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 
 import styles from './style'
-export default function Quizzes() {
+
+export default function Quizzes({navigation}) {
   return (
     <View>
       <StatusBar barStyle='dark-content'/>
@@ -24,7 +25,12 @@ export default function Quizzes() {
         </TouchableOpacity>
       </View>
       <View>
-        
+        <TouchableOpacity
+        onPress={() => navigation.navigate('HTMLQuiz')}
+        >
+          <Text>UI</Text>
+          <Text>Questões sobre interface</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
