@@ -4,6 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Onboarding1 from './src/pages/Onboarding1';
+import Onboarding2 from './src/pages/Onboarding2';
+import Onboarding3 from './src/pages/Onboarding3';
 import Quizzes from './src/pages/Quizzes';
 import HTMLQuiz from './src/pages/HTMLQuiz';
 import HTMLContent from './src/pages/HTMLContent'
@@ -72,6 +75,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Onboarding1" component={Onboarding1} options={{headerShown: false}}/>
+        <Stack.Screen name="Onboarding2" component={Onboarding2} options={{headerShown: false}}/>
+        <Stack.Screen name="Onboarding3" component={Onboarding3} options={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Tabs} options={{headerShown: false}}/>
         <Stack.Screen name="HTMLQuiz" component={HTMLQuiz} options={{headerShown: false}} />
         <Stack.Screen name="HTMLContent" component={HTMLContent} options={{headerShown: false}}/>
