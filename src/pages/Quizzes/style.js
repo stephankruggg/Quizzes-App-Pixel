@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+    BigView: {
+        flex: 1
+    },
     Hello: {
         width:"100%",
         fontSize:16,
@@ -52,6 +55,38 @@ const styles = StyleSheet.create({
     },
     TextBigBlueButton: {
         color:'#F2F2F2'
+    },
+    QuizView: {
+        width: 343,
+        marginLeft: 16,
+        marginTop: 20,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#BEBAB3',
+        alignContent: 'center'
+    },
+    QuizImage: {
+        borderRadius: 8,
+        width: 340,
+        height: 194
+    },
+    QuizTitle: {
+        width: 311,
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginLeft: 16,
+        marginTop: 16
+    },
+    QuizDescription: {
+        marginTop: 4,
+        marginLeft: 16,
+        marginBottom: 8,
+        fontSize: 14,
+        width: 311
+    },
+    FlatlistView: {
+        flex: 1,
+        marginBottom: 93
     }
 });
 
