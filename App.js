@@ -7,6 +7,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Onboarding1 from './src/pages/Onboarding1';
 import Onboarding2 from './src/pages/Onboarding2';
 import Onboarding3 from './src/pages/Onboarding3';
+import Entrar from './src/pages/Entrar';
+import Cadastrar from './src/pages/Cadastrar';
+import Esqueceu from './src/pages/Esqueceu';
 import Quizzes from './src/pages/Quizzes';
 import HTMLQuiz from './src/pages/HTMLQuiz';
 import HTMLContent from './src/pages/HTMLContent'
@@ -78,6 +81,9 @@ export default function App() {
         <Stack.Screen name="Onboarding1" component={Onboarding1} options={{headerShown: false}}/>
         <Stack.Screen name="Onboarding2" component={Onboarding2} options={{headerShown: false}}/>
         <Stack.Screen name="Onboarding3" component={Onboarding3} options={{headerShown: false}}/>
+        <Stack.Screen name="Entrar" component={Entrar} options={{headerShown: false}}/>
+        <Stack.Screen name="Cadastrar" component={Cadastrar} options={{headerShown: false}}/>
+        <Stack.Screen name="Esqueceu" component={Esqueceu} options={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Tabs} options={{headerShown: false}}/>
         <Stack.Screen name="HTMLQuiz" component={HTMLQuiz} options={{headerShown: false}} />
         <Stack.Screen name="HTMLContent" component={HTMLContent} options={{headerShown: false}}/>

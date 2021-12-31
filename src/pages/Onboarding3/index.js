@@ -23,7 +23,7 @@ export default function Onboarding1({navigation}) {
             <View style={styles.ViewSecond}></View>
             <View style={styles.ViewCurrent}></View>
         </View>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.BotaoAvancar}>
+        <TouchableOpacity onPress={() => navigation.navigate('Entrar')} style={styles.BotaoAvancar}>
             <Text style={styles.FraseBotao}>Vamos lá!</Text>
         </TouchableOpacity>
       </ScrollView>

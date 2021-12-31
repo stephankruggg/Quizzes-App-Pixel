@@ -9,7 +9,7 @@ export default function Onboarding1({navigation}) {
     <SafeAreaView>
       <ScrollView>
         <StatusBar barStyle='dark-content'/>
-        <TouchableOpacity style={styles.SkipButton} onPress={() => navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.SkipButton} onPress={() => navigation.navigate('Entrar')}>
             <Text style={styles.SkipText}>Skip</Text>
         </TouchableOpacity>
         <Image
