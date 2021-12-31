@@ -45,13 +45,13 @@ export default function HTMLContent({navigation}) {
           <Image
           style={styles.Imagem}
           source={picture}></Image>
-          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonAPressed} style={!APressed ? styles.BotaoResposta : styles.ErradoBotaoResposta}>
+          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonAPressed} style={styles.BotaoResposta}>
             <Text style={styles.TextoResposta}>A.     {first}</Text>
           </TouchableOpacity>
-          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonBPressed} style={!BPressed ? styles.BotaoResposta : styles.ErradoBotaoResposta}>
+          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonBPressed} style={styles.BotaoResposta}>
             <Text style={styles.TextoResposta}>B.     {second}</Text>
           </TouchableOpacity>
-          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonCPressed} style={!CPressed ? styles.BotaoResposta : styles.CertoBotaoResposta}>
+          <TouchableOpacity disabled={!buttonEnabled} onPress={buttonCPressed} style={styles.UltimoBotaoResposta}>
             <Text style={styles.TextoResposta}>C.     {third}</Text>
           </TouchableOpacity>
         </ScrollView>

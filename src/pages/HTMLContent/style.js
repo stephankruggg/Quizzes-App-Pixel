@@ -48,6 +48,16 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#BEBAB3',
     },
+    UltimoBotaoResposta: {
+        marginTop: 16,
+        marginBottom: 40,
+        width: 343,
+        height: 58,
+        marginLeft: 16,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#BEBAB3',
+    },
     CertoBotaoResposta: {
         marginTop: 16,
         width: 343,
