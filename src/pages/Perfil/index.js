@@ -18,7 +18,7 @@ export default function Profile({navigation}) {
             require('./assets/Avatar.png')
         }
         ></Image>
-      <TouchableOpacity style={styles.HistButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('Historico')} style={styles.HistButton}>
         <Text style={styles.ButtonText}>Seu histórico</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('About')} style={styles.AboutButton}>

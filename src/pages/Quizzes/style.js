@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     },
     FlatlistView: {
         flex: 1,
-        marginBottom: 93
+        marginBottom: 83
     }
 });
 

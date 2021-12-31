@@ -17,6 +17,7 @@ import Acerto from './src/pages/Acerto'
 import Erro from './src/pages/Erro'
 import Perfil from './src/pages/Perfil';
 import About from './src/pages/About'
+import Historico from './src/pages/Historico'
 import Configs from './src/pages/Configs';
 
 const Tab = createBottomTabNavigator();
@@ -30,7 +31,7 @@ function Tabs() {
           tabBarActiveTintColor: '#82327E',
           tabBarLabelStyle: {
             fontSize: 14,
-            marginBottom: 25,
+            marginBottom: 12,
             marginTop: 8
           },
           tabBarIconStyle: {
@@ -40,7 +41,7 @@ function Tabs() {
             position: 'absolute',
             borderTopLeftRadius: 16,
             borderTopRightRadius: 16,
-            height: 90,
+            height: 80,
             borderColor: '#BEBAB3',
             borderWidth: 1
           }
@@ -88,6 +89,7 @@ export default function App() {
         <Stack.Screen name="HTMLQuiz" component={HTMLQuiz} options={{headerShown: false}} />
         <Stack.Screen name="HTMLContent" component={HTMLContent} options={{headerShown: false}}/>
         <Stack.Screen name="About" component={About} options={{headerShown: false}} />
+        <Stack.Screen name="Historico" component={Historico} options={{headerShown: false}} />
         <Stack.Screen name="Acerto" component={Acerto} options={{headerShown: false}} />
         <Stack.Screen name="Erro" component={Erro} options={{headerShown: false}} />
       </Stack.Navigator>
