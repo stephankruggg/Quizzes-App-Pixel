@@ -18,29 +18,50 @@ const Stack = createStackNavigator();
 
 function Tabs() {
   return (
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarShowLabel: true,
+          tabBarActiveTintColor: '#82327E',
+          tabBarLabelStyle: {
+            fontSize: 14,
+            marginBottom: 25,
+            marginTop: 8
+          },
+          tabBarIconStyle: {
+            marginTop: 18
+          },
+          tabBarStyle: {
+            position: 'absolute',
+            borderTopLeftRadius: 16,
+            borderTopRightRadius: 16,
+            height: 90,
+            borderColor: '#BEBAB3',
+            borderWidth: 1
+          }
+        }}
+      >
         <Tab.Screen name="Quizzes" component={Quizzes}
         options={{
           headerShown:false,
-          tabBarIcon: () => (<Image 
+          tabBarIcon: ({focused}) => (<Image 
             source={require('./src/assets/courses.png')}
-            style={{size: 9}} 
+            style={{tintColor: focused ? '#82327E' : '#BEBAB3'}} 
             />)
         }}/>
         <Tab.Screen name="Perfil" component={Perfil}
         options={{
           headerShown:false,
-          tabBarIcon: () => (<Image 
+          tabBarIcon: ({focused}) => (<Image 
             source={require('./src/assets/profile.png')}
-            style={{size: 9}} 
+            style={{tintColor: focused ? '#82327E' : '#BEBAB3'}} 
             />)
         }}/>
         <Tab.Screen name="Configs" component={Configs}
         options={{
           headerShown:false,
-          tabBarIcon: () => (<Image 
+          tabBarIcon: ({focused}) => (<Image 
             source={require('./src/assets/configs.png')}
-            style={{size: 9}} 
+            style={{tintColor: focused ? '#82327E' : '#BEBAB3'}} 
             />)
         }}/>
       </Tab.Navigator>
