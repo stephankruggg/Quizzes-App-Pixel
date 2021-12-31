@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, Image, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
+import { SafeAreaView, Image, Text, View, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 
 import styles from './style'
@@ -45,22 +45,29 @@ export default function Quizzes({navigation}) {
   }
 
   return (
-    <View style={styles.BigView}>
+    <SafeAreaView style={styles.BigView}>
       <StatusBar barStyle='dark-content'/>
       <Text style={styles.Hello}>Hello,</Text>
       <Text style={styles.Nome}>Juana Antonieta</Text>
-      <TextInput style={styles.Search} placeholder='Pesquisar quiz'></TextInput>
+      <View style={styles.SearchView}>
+        <TextInput style={styles.Search} placeholder='Pesquisar quiz'>
+        </TextInput>
+        <Image
+          style={styles.Lupa}
+          source={require('./assets/Lupa.png')}
+        />
+      </View>
       <View style={styles.BigBlueButtonView}>
-          <TouchableOpacity style={styles.BigBlueButton}>
+          <TouchableOpacity style={styles.BigBlueButtonHTML}>
             <Text style={styles.TextBigBlueButton}>#HTML</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.BigBlueButton}>
+          <TouchableOpacity style={styles.BigBlueButtonUX}>
             <Text style={styles.TextBigBlueButton}>#UX</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.BigBlueButton}>
+          <TouchableOpacity style={styles.BigBlueButtonSwift}>
             <Text style={styles.TextBigBlueButton}>#Swift</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.BigBlueButton}>
+        <TouchableOpacity style={styles.BigBlueButtonUI}>
           <Text style={styles.TextBigBlueButton}>#UI</Text>
         </TouchableOpacity>
       </View>
@@ -69,8 +76,9 @@ export default function Quizzes({navigation}) {
         data={DATA}
         renderItem={rItem}
         keyExtractor={item => item.id}
+        showsVerticalScrollIndicator={false}
         ></FlatList>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }

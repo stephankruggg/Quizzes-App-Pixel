@@ -7,9 +7,9 @@ const styles = StyleSheet.create({
     Hello: {
         width:"100%",
         fontSize:16,
+        marginTop: 20,
         paddingLeft:16,
         paddingRight:16,
-        paddingTop:35
     },
     Nome: {
         width:'100%',
@@ -21,37 +21,85 @@ const styles = StyleSheet.create({
         color:'#333333'
     },
     BigBlueButtonView: {
-        marginTop:12,
         flexDirection:'row'
     },
-    Search: {
-        marginTop: 12,
-        marginRight: 16,
-        marginLeft: 16,
-        width: 343,
-        height: 56, 
-        paddingLeft: 16,
-        paddingRight: 56,
-        paddingTop: 17,
-        paddingBottom: 17,
+    SearchView: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
         borderWidth: 1,
+        borderColor: '#BEBAB3',
+        height: 56,
         borderRadius: 12,
-        alignContent: 'center',
-        alignItems: 'center'
+        margin: 10,
     },
-    BigBlueButton: {
-        width:70,
-        borderRadius:12,
+    Search: {
+        flex: 1,
+        marginLeft: 16
+    },
+    Lupa: {
+        padding: 10,
+        marginRight: 18,
+        height: 20,
+        width: 20,
+        resizeMode: 'stretch',
+        alignItems: 'center',
+    },
+    BigBlueButtonHTML: {
+        width: 70,
+        borderRadius: 12,
         backgroundColor:'#65AAEA',
         justifyContent:'center',
         alignItems:'center',
         flexDirection:'row',
-        marginLeft:16,
-        marginTop:4,
-        paddingBottom:3,
-        paddingTop:3,
-        paddingLeft:11,
-        paddingRight:11
+        marginLeft: 16,
+        marginTop: 4,
+        paddingBottom: 3,
+        paddingTop: 3,
+        paddingLeft: 11,
+        paddingRight: 11
+    },
+    BigBlueButtonUX: {
+        width: 52,
+        borderRadius: 12,
+        backgroundColor:'#65AAEA',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection:'row',
+        marginLeft: 8,
+        marginTop: 4,
+        paddingBottom: 3,
+        paddingTop: 3,
+        paddingLeft: 11,
+        paddingRight: 11
+    },
+    BigBlueButtonSwift: {
+        width: 64,
+        borderRadius: 12,
+        backgroundColor:'#65AAEA',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection:'row',
+        marginLeft: 8,
+        marginTop: 4,
+        paddingBottom: 3,
+        paddingTop: 3,
+        paddingLeft: 11,
+        paddingRight: 11
+    },
+    BigBlueButtonUI: {
+        width: 45,
+        borderRadius: 12,
+        backgroundColor:'#65AAEA',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection:'row',
+        marginLeft: 8,
+        marginTop: 4,
+        paddingBottom: 3,
+        paddingTop: 3,
+        paddingLeft: 11,
+        paddingRight: 11
     },
     TextBigBlueButton: {
         color:'#F2F2F2'
