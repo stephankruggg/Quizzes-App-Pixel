@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     Dificuldade: {
         marginTop: 32,
-        alignContent: 'flex-end',
+        alignContent: 'right',
         marginRight: 12,
         marginLeft: 291,
         borderRadius: 12,

@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 
 import styles from './style'
-export default function Quizzes({navigation}) {
+export default function Erro({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.Visualization}>

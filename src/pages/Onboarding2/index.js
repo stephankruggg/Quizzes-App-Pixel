@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 import styles from './style'
 
-export default function Onboarding1({navigation}) {
+export default function Onboarding2({navigation}) {
   return (
     <SafeAreaView>
       <ScrollView>

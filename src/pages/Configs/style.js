@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
         width: 270,
         textAlign: 'center',
         fontWeight: 'bold',
-        style: 'normal',
         fontSize: 24,
         alignContent: 'center'
     },
