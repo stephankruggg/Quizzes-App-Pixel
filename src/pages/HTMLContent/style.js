@@ -48,6 +48,26 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#BEBAB3',
     },
+    CertoBotaoResposta: {
+        marginTop: 16,
+        width: 343,
+        height: 58,
+        marginLeft: 16,
+        borderRadius: 8,
+        borderWidth: 2,
+        borderColor: '#5BA092',
+        backgroundColor: '#FFF5EE'
+    },
+    ErradoBotaoResposta:{
+        marginTop: 16,
+        width: 343,
+        height: 58,
+        marginLeft: 16,
+        borderRadius: 8,
+        borderWidth: 2,
+        borderColor: '#EF4949',
+        backgroundColor: '#FFF5EE'
+    },
     TextoResposta: {
         marginTop: 16,
         marginLeft: 24,
