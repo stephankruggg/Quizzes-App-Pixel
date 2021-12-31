@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         marginLeft: 16,
         marginTop: 16,
         width: 343,
-        height: 191,
+        height: 191
     },
     BotaoResposta: {
         marginTop: 16,

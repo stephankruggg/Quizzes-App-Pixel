@@ -21,19 +21,27 @@ function Tabs() {
       <Tab.Navigator>
         <Tab.Screen name="Quizzes" component={Quizzes}
         options={{
-          headerShown:false
+          headerShown:false,
+          tabBarIcon: () => (<Image 
+            source={require('./src/assets/courses.png')}
+            style={{size: 9}} 
+            />)
         }}/>
         <Tab.Screen name="Perfil" component={Perfil}
         options={{
           headerShown:false,
-          tabBarIcon: ({tintColor}) => (<Image 
-            source={require('./src/assets/courses.png')}
-            style={{width:'20', height:'20', tintColor: tintColor}} 
+          tabBarIcon: () => (<Image 
+            source={require('./src/assets/profile.png')}
+            style={{size: 9}} 
             />)
         }}/>
         <Tab.Screen name="Configs" component={Configs}
         options={{
-          headerShown:false
+          headerShown:false,
+          tabBarIcon: () => (<Image 
+            source={require('./src/assets/configs.png')}
+            style={{size: 9}} 
+            />)
         }}/>
       </Tab.Navigator>
   );

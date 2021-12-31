@@ -14,7 +14,7 @@ export default function About({navigation}) {
       </View>
       <Image
       style={styles.Logo}
-      source={{uri:"./assets/illustration.png"}}
+      source={require("./assets/illustration.png")}
       ></Image>
       <Text style={styles.Name}>PixelQuizzes</Text>
       <Text style={styles.Content}>O PixelQuizzes é um aplicativo criado para facilitar o aprendizado de conteúdos que nem sempre são os melhores de se aprender. Através da nossa plataforma, prometemos facilitar a sua aprendizagem em conceitos dos mais variados tipos. Isso se dá pelo fato de usarmos uma metodologia inovadora para aprendizagem!</Text>

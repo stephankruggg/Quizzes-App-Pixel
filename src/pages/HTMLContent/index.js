@@ -31,8 +31,6 @@ export default function HTMLContent({navigation}) {
     setNextPage('Acerto');
   }
 
-  const picture = require('./assets/Test Question Image.png')
-
   if (buttonEnabled) {
     return (
       <SafeAreaView>
@@ -44,7 +42,9 @@ export default function HTMLContent({navigation}) {
           <Text style={styles.Pergunta}>Qual tag é usada para fazer títulos grandes?</Text>
           <Image
           style={styles.Imagem}
-          source={picture}></Image>
+          source={
+            require('./assets/TestQuestionImage.png')}>
+          </Image>
           <TouchableOpacity disabled={!buttonEnabled} onPress={buttonAPressed} style={styles.BotaoResposta}>
             <Text style={styles.TextoResposta}>A.     {first}</Text>
           </TouchableOpacity>
@@ -68,7 +68,8 @@ export default function HTMLContent({navigation}) {
         <Text style={styles.Pergunta}>Qual tag é usada para fazer títulos grandes?</Text>
         <Image
         style={styles.Imagem}
-        source={picture}></Image>
+        source={
+          require('./assets/TestQuestionImage.png')}></Image>
         <TouchableOpacity disabled={!buttonEnabled} onPress={buttonAPressed} style={!APressed ? styles.BotaoResposta : styles.ErradoBotaoResposta}>
           <Text style={styles.TextoResposta}>A.     {first}</Text>
         </TouchableOpacity>

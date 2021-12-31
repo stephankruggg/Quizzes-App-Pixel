@@ -21,22 +21,20 @@ const styles = StyleSheet.create({
         marginTop: 24,
         textAlign: 'center',
         height: 32,
-        flex:'center',
         fontSize: 24,
         fontWeight: 'bold',
         alignContent: 'center'
     },
     Logo: {
         width: 311,
-        height: 100,
-        marginTop: 158,
-        marginLeft: 127,
+        height: 311,
+        marginTop: 20,
+        marginLeft: 35,
         alignContent: 'center'
     },
     Name: {
         width: '100%',
         height: 46,
-        flex:'center',
         fontSize: 40,
         fontWeight: 'bold',
         alignContent: 'center',

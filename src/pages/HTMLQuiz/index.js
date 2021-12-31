@@ -16,9 +16,9 @@ export default function HTMLQuiz({navigation}) {
         </View>
         <Image
         style={styles.Cover}
-        source={{
-            uri:'./images/cover.png'
-        }}
+        source={
+            require('./assets/cover.png')
+          }
         ></Image>
         <View style={styles.Dificuldade}>
           <Text style={styles.DificuldadeTexto}>FÁCIL</Text>

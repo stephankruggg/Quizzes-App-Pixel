@@ -14,9 +14,9 @@ export default function Profile({navigation}) {
       </View>
       <Image
         style={styles.Avatar}
-        source={{
-            uri:'./images/Avatar.png'
-        }}
+        source={
+            require('./assets/Avatar.png')
+        }
         ></Image>
       <TouchableOpacity style={styles.HistButton}>
         <Text style={styles.ButtonText}>Seu histórico</Text>
